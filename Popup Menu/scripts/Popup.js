@@ -2,30 +2,30 @@
 ;(function($) {
 	$(document).ready(function() {
 		var transport = '<div>\
-							<a href="#"><i id="plane" class="fa fa-plane"></i></a>\
-							<a href="#"><i id="car" class="fa fa-car"></i></a>\
-							<a href="#"><i id="bus" class="fa fa-bus"></i></a>\
-							<a href="#"><i id="bicycle" class="fa fa-bicycle"></i></a>\
-					 	 </div>';
+					<a href="#"><i id="plane" class="fa fa-plane"></i></a>\
+					<a href="#"><i id="car" class="fa fa-car"></i></a>\
+					<a href="#"><i id="bus" class="fa fa-bus"></i></a>\
+					<a href="#"><i id="bicycle" class="fa fa-bicycle"></i></a>\
+				 </div>';
 		var starwars = '<div>\
-							<a id="rebs" href="./PopupResult.html#rebel"><i id="rebels" class="fa fa-ra"></i></a>\
-							<a id="imperial" href="./PopupResult.html#empire"><i id="imperials" class="fa fa-empire"></i></a>\
-						    <a id="firstO" href="./PopupResult.html#firstOrder"><i id="firstOrder" class="fa fa-first-order"></i></a>\
-						</div>';
+					<a id="rebs" href="./PopupResult.html#rebel"><i id="rebels" class="fa fa-ra"></i></a>\
+					<a id="imperial" href="./PopupResult.html#empire"><i id="imperials" class="fa fa-empire"></i></a>\
+				    	<a id="firstO" href="./PopupResult.html#firstOrder"><i id="firstOrder" class="fa fa-first-order"></i></a>\
+				</div>';
 		var smileys =  '<div>\
-							<a href="#"><i id="v-hap" class="material-icons">sentiment_very_satisfied</i></a>\
-							<a href="#"><i id="hap" class="material-icons">sentiment_satisfied</i></a>\
-							<a href="#"><i id="neut" class="material-icons">sentiment_neutral</i></a>\
-							<a href="#"><i id="unhap" class="material-icons">sentiment_dissatisfied</i></a>\
-							<a href="#"><i id="v-unhap" class="material-icons">sentiment_very_dissatisfied</i></a>\
-					    </div>';
+					<a href="#"><i id="v-hap" class="material-icons">sentiment_very_satisfied</i></a>\
+					<a href="#"><i id="hap" class="material-icons">sentiment_satisfied</i></a>\
+					<a href="#"><i id="neut" class="material-icons">sentiment_neutral</i></a>\
+					<a href="#"><i id="unhap" class="material-icons">sentiment_dissatisfied</i></a>\
+					<a href="#"><i id="v-unhap" class="material-icons">sentiment_very_dissatisfied</i></a>\
+				</div>';
 		var homeCallPic = '<div>\
-							<a href="#"><i id="home" class="material-icons">home</i></a>\
-							<a href="#"><i id="call" class="material-icons">call</i></a>\
-							<a href="#"><i id="chat" class="material-icons">chat</i></a>\
-							<a href="#"><i id="mail" class="material-icons">mail_outline</i></a>\
-							<a href="#"><i id="camera" class="material-icons">camera_alt</i></a>\
-						   </div>';
+					<a href="#"><i id="home" class="material-icons">home</i></a>\
+					<a href="#"><i id="call" class="material-icons">call</i></a>\
+					<a href="#"><i id="chat" class="material-icons">chat</i></a>\
+					<a href="#"><i id="mail" class="material-icons">mail_outline</i></a>\
+					<a href="#"><i id="camera" class="material-icons">camera_alt</i></a>\
+				   </div>';
 //call popup, pass through options
 	//	$('div[data-popup="myPopUp"]').popup({	//call popup on the element the popup will be attached to
 		$('[name="menu1"]').popup({
