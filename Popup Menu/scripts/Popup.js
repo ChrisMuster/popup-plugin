@@ -1,4 +1,7 @@
 /*jshint multistr: true */
+
+//this is a sample .js file that shows how you might set up the popup menus
+
 ;(function($) {
 	$(document).ready(function() {
 		var transport = '<div>\
