@@ -11,13 +11,13 @@
 	var Popup = {
 
 		defaultOptions: {
-			content: "",	//left blank, must be set when new options passed through
-			position: "top",	//where the popup will show by default- top. Other options: right, bottom, or left
-			style: "",	//default no style, will revert to default colours. Other options: blue, red, green, custom
-			animation: "standard",	//Standard animation by default. Other options: flip, grow, bounce
-			event: "click",	//Default set to "click", can also be set to hover
-			hideOnClick: true,	//When true, clicking off the menu closes it. When false, only clicking on the menu closes it
-			zIndex: 100,	//Individual z-index can be set for each menu for layering if necessary
+			content: "",				//left blank, must be set when new options passed through
+			position: "top",			//where the popup will show by default- top. Other options: right, bottom, or left
+			style: "",					//default no style, will revert to default colours. Other options: blue, red, green, custom
+			animation: "standard",		//Standard animation by default. Other options: flip, grow, bounce
+			event: "click",				//Default set to "click", can also be set to hover
+			hideOnClick: true,			//When true, clicking off the menu closes it. When false, only clicking on the menu closes it
+			zIndex: 100,				//Individual z-index can be set for each menu for layering if necessary
 			popItemClick: function(){}	//function to handle actions when clicking on popup menu icons
 		},
 
@@ -81,14 +81,14 @@
 			if (self.options.event == 'hover') {
 				self.$elem.on('mouseenter', function(event) {
 					setTimeout(function() {
-                        self.show();
-                    }, 250);
-				});
+						self.show();
+				    	}, 250);
+					});
 
 				$('.pop-cont').on('mouseleave', function(event) {
 					setTimeout(function() {
-                            self.hide();
-                        }, 500);
+						self.hide();
+					}, 500);
 				});
 			}
 
