@@ -14,36 +14,36 @@
 			var self = this;
 
 			var defaultPopupMenu = `<div>
-							<a href="#"><i id="faInfo" class="fa fa-info"></i></a>
-							<a href="#"><i id="faQuest" class="fa fa-question"></i></a>
-							<a href="#" title="Link to example.com"><i id="faLink" class="fa fa-external-link"></i></a>
-						</div>`;
+										<a href="#"><i id="faInfo" class="fa fa-info"></i></a>
+										<a href="#"><i id="faQuest" class="fa fa-question"></i></a>
+										<a href="#" title="Link to example.com"><i id="faLink" class="fa fa-external-link"></i></a>
+									</div>`;
 
 			this.defaultOptions = {
 				content 	: defaultPopupMenu,	//this option MUST be set when new options passed through, or only the default menu will show
-				position 	: "top",		//where the popup will show by default- top. Other options: right, bottom, or left
+				position 	: "top",			//where the popup will show by default- top. Other options: right, bottom, or left
 				theme 		: "popupTheme", 	//Menu Element theme. Defaults to popupTheme, but custom class can be set instead
-				style 		: "",			//Popup Menu Style. Default no style, will revert to default colours. Other options: Blue, Red, Green, Custom
+				style 		: "",				//Popup Menu Style. Default no style, will revert to default colours. Other options: Blue, Red, Green, Custom
 				animation 	: "standard",		//Standard animation by default. Other options: flip, grow, bounce
-				event 		: "click",		//Default set to "click", can also be set to hover
-				hideOnClick : true,			//When true, clicking off the menu closes it. When false, only clicking on the menu closes it
-				zIndex 		: 100,			//Individual z-index can be set for each menu for layering if necessary
+				event 		: "click",			//Default set to "click", can also be set to hover
+				hideOnClick : true,				//When true, clicking off the menu closes it. When false, only clicking on the menu closes it
+				zIndex 		: 100,				//Individual z-index can be set for each menu for layering if necessary
 
 				//function to handle actions when clicking on popup menu icons. MUST be set when options are passed through or an error or default menu actions will occur 
 				popItemClick: function(globalthis) {
 					//Default actions
 					var twentyEightSpaces = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`;
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`;
 					
 					var twentyFourSpaces = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`;
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`;
 					
 					var eightSpaces = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`;
 					
 					var sixteenSpaces = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`;
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`;
 
 					var content;				
 					var container = $(event.target).attr("id");
@@ -54,21 +54,21 @@
 								type 	: "info",
 								heading : "Information",
 								text 	: `<p>To set a new menu when calling .popup() on an element,  
-										you must set a variable that holds a string with the html for that menu, then 
-										pass that variable through as the "content" part of the options. For example: </p>
-										<p>var myMenu = '&lt;div&gt;&#92; <br />
-										${twentyEightSpaces}&lt;a href="#''&gt;&lt;i id="faInfo" class="fa fa-info"&gt;&lt;/i&gt;&lt;/a&gt;&#92;<br />
-										${twentyFourSpaces}&lt;/div&gt;'; </p>
-										<p>would create a menu with one item, and just add more '&lt;a&gt;' tags with icons inside the '&lt;div&gt;' tags to add more menu items. </p> 
-										<p>Then add it to the content when calling the popup: </p>
-										<p>$("#myPopUp").popup({ <br />
-										${eightSpaces}content: myMenu, <br />
-										${eightSpaces}popItemClick(globalthis) { <br />
-										${sixteenSpaces}...new actions here... <br />
-										${eightSpaces}} <br />
-										});</p>
-										<p>You must set new actions in the "popItemClick" function for your menu 
-										in the options you pass or it will throw an error.</p>`
+											you must set a variable that holds a string with the html for that menu, then 
+											pass that variable through as the "content" part of the options. For example: </p>
+											<p>var myMenu = '&lt;div&gt;&#92; <br />
+											${twentyEightSpaces}&lt;a href="#''&gt;&lt;i id="faInfo" class="fa fa-info"&gt;&lt;/i&gt;&lt;/a&gt;&#92;<br />
+											${twentyFourSpaces}&lt;/div&gt;'; </p>
+											<p>would create a menu with one item, and just add more '&lt;a&gt;' tags with icons inside the '&lt;div&gt;' tags to add more menu items. </p> 
+											<p>Then add it to the content when calling the popup: </p>
+											<p>$("#myPopUp").popup({ <br />
+											${eightSpaces}content: myMenu, <br />
+											${eightSpaces}popItemClick(globalthis) { <br />
+											${sixteenSpaces}...new actions here... <br />
+											${eightSpaces}} <br />
+											});</p>
+											<p>You must set new actions in the "popItemClick" function for your menu 
+											in the options you pass or it will throw an error.</p>`
 							}
 							globalthis.alertBox(content);
 							break;
@@ -77,9 +77,9 @@
 								type 	: "info",
 								heading : "Question",
 								text 	: `<p>Why is this being shown?</p>
-									   <p>Because you need to set a popup menu of your own (and the popItemClick() function) or you get this default menu.</p>
-									   <p>If you set the popup menu but don't change the popItemClick() function, you will get an error.</p>
-									   <p>Click the "i" button for more info.</p>`
+										   <p>Because you need to set a popup menu of your own (and the popItemClick() function) or you get this default menu.</p>
+										   <p>If you set the popup menu but don't change the popItemClick() function, you will get an error.</p>
+										   <p>Click the "i" button for more info.</p>`
 							}
 							globalthis.alertBox(content);
 							break;
@@ -91,7 +91,7 @@
 								type 	: "danger",
 								heading : "Error",
 								text 	: `<p>Error! You have set a new menu without changing the 'popItemClick' function. 
-									   The 'popItemClick' function must be set to new menu actions.</p>`
+									   	   The 'popItemClick' function must be set to new menu actions.</p>`
 							}
 							globalthis.alertBox(content);
 					}
@@ -279,16 +279,16 @@
 		alertBox(content) {
 			var self = this;
 			var myAlert =  `<div id="alertBox" class="alert">
-						<div class="alert-content">
-							<div class="alert-header">
-								<h2></h2>
-							</div>
-							<div class="alert-body"></div>
-							<div class="alert-footer">
-								<button class="alert-close">OK</button>
-							</div>
-						</div>
-					</div>`;
+								<div class="alert-content">
+									<div class="alert-header">
+										<h2></h2>
+									</div>
+									<div class="alert-body"></div>
+									<div class="alert-footer">
+										<button class="alert-close">OK</button>
+									</div>
+								</div>
+							</div>`;
 
 			$('body').append(myAlert);
 

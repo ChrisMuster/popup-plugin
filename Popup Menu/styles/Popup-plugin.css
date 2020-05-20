@@ -1,4 +1,35 @@
 /*Colour themes and settings**********************************************/
+/*To set a custom theme in your own CSS files, copy the commented out section below to your own CSS file and add your own colors (remove the () and add the color, eg. #fff, and add a custom name to the end of "popupTheme", like "popupThemeCustom1" or "popupThemePurple"*/
+
+/* .popupThemeCustom { 
+    background-color: (replace this with the color) !important;
+    color: (replace this with the color) !important;
+}
+
+.popupThemeCustom i {
+    color: (replace this with the color) !important;
+}
+
+.popupThemeCustom i:hover {
+    background-color: (replace this with the color) !important;
+}
+
+.pop-cont.pop-top.popupThemeCustom::after {
+    border-color: (replace this with the color) transparent transparent transparent !important;
+}
+
+.pop-cont.pop-bottom.popupThemeCustom::before {
+    border-color: transparent transparent (replace this with the color) transparent !important;
+}
+
+.pop-cont.pop-left.popupThemeCustom::after {
+    border-color: transparent transparent transparent (replace this with the color) !important;
+}
+
+.pop-cont.pop-right.popupThemeCustom::before {
+    border-color: transparent (replace this with the color) transparent transparent !important;
+} */
+
 /*CUSTOM THEME*************************************************************/
 .popupThemeCustom { /*Change these settings to set up a custom theme*/
     background-color: #fffe00 !important;
