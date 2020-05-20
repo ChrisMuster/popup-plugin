@@ -38,7 +38,7 @@ div.icon-box {
 }
 
 p.icon-text, p.menuText {
-	display: inline;
+	display: block;
 	margin-left: 45px;
 	margin-bottom: 0px;
 	float: left;
@@ -50,7 +50,7 @@ p.menuText {
 }
 
 .textPopup {	/*When attaching popups to text menus, style text menu separately*/
-	display: inline-block;
+	display: block;
 	font-size: 28px;
 	font-weight: bold;
 	color: #130e5a;
