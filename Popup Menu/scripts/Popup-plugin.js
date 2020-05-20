@@ -14,9 +14,10 @@
 			var self = this;
 
 			var defaultPopupMenu = `<div>
-										<a href="#"><i id="faInfo" class="fa fa-info"></i></a>
-										<a href="#"><i id="faQuest" class="fa fa-question"></i></a>
-									</div>`;
+							<a href="#"><i id="faInfo" class="fa fa-info"></i></a>
+							<a href="#"><i id="faQuest" class="fa fa-question"></i></a>
+							<a href="#" title="Link to example.com"><i id="faLink" class="fa fa-external-link"></i></a>
+						</div>`;
 
 			this.defaultOptions = {
 				content 	: defaultPopupMenu,	//this option MUST be set when new options passed through, or only the default menu will show
@@ -78,6 +79,9 @@
 										   <p>Click the "i" button for more info.</p>`
 							}
 							globalthis.alertBox(content);
+							break;
+						case "faLink":
+							window.open("http://example.com/");
 							break;
 						default:
 							content = {
